@@ -1,5 +1,5 @@
-import  supabaseClient from '../api/supabaseClient.js'
-import { USER_PROFILE_TABLE } from '../../src/enums/tableNames.js'
+import  supabaseClient from '../utils/supabaseClient.js'
+import { USER_PROFILE_TABLE } from '../../enums/tableNames.js'
 import {hashPassword, validateSignUpData} from '../utils/verification.js'
 
 const update = async (user_id, value) => {
